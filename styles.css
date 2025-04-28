@@ -72,6 +72,7 @@ h1 {
   max-width: 800px;
   margin: 0 auto;
   padding: 8px;
+  flex-direction: row;
 }
 
 #description {
@@ -191,4 +192,202 @@ h3 {
 .copyright {
   color: #71717a;
   font-size: 0.875rem;
+}
+
+#logo-NTXT {
+  display: none;
+}
+.jobs-ph {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  #logo-NTXT {
+    display: block;
+  }
+  #logo-TXT {
+    display: none;
+  }
+
+  h1 {
+    margin: 12px 0;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+  }
+
+  #description {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  #banner {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+  }
+  #team-image {
+    width: 100%;
+    border-radius: 10;
+  }
+
+  #team {
+    width: 100%;
+  }
+
+  .jobs-ph {
+    display: block;
+  }
+
+  #jobs-table {
+    display: none;
+  }
+
+  #jobs {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 8px;
+  }
+
+  .job {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+    color: #222222;
+    font-weight: 500;
+  }
+
+  .job-detail {
+    margin-top: 4px;
+    color: #575757;
+  }
+
+  .application {
+    max-width: 500px;
+  }
+
+  .form-group input,
+  select,
+  textarea {
+    width: 90%;
+  }
+
+  #footer li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #footer-links {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  #banner {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+  }
+
+  #team-image {
+    width: 100%;
+    border-radius: 10;
+  }
+
+  #team {
+    width: 100%;
+  }
+
+  #description {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .jobs-ph {
+    display: block;
+  }
+
+  #jobs-table {
+    display: none;
+  }
+
+  #jobs {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 8px;
+  }
+
+  #jobs {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 8px;
+  }
+
+  .job {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+    color: #222222;
+    font-weight: 500;
+  }
+
+  .job-detail {
+    margin-top: 4px;
+    color: #575757;
+  }
+
+  .application {
+    max-width: 500px;
+  }
+
+  .form-group input,
+  select,
+  textarea {
+    width: 70%;
+  }
+
+  #footer li {
+    display: inline;
+    margin-bottom: 10px;
+  }
+
+  #footer-links {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  #application {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  label {
+  }
 }
